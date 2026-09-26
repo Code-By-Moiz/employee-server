@@ -1,0 +1,31 @@
+14-11-37 | Window: Employee Tracker | Category: Non-Productive | Image: 14-11-37.jpg
+14-12-14 | Window: Employee Tracker | Category: Non-Productive | Image: 14-12-14.jpg
+15-08-31 | Status: Active Working | Window: Employee Tracker Pro | Category: Non-Productive | WorkSecs: 0 | BreakSecs: 0 | Image: 15-08-31.jpg
+15-08-33 | Status: Active Working | Window: Employee Tracker Pro | Category: Non-Productive | WorkSecs: 0 | BreakSecs: 0 | Image: 15-08-33.jpg
+15-08-35 | Status: Active Working | Window: Employee Tracker Pro | Category: Non-Productive | WorkSecs: 0 | BreakSecs: 0 | Image: 15-08-35.jpg
+15-08-37 | Status: Active Working | Window: Employee Tracker Pro | Category: Non-Productive | WorkSecs: 0 | BreakSecs: 0 | Image: 15-08-37.jpg
+15-08-39 | Status: Active Working | Window: Employee Tracker Pro | Category: Non-Productive | WorkSecs: 0 | BreakSecs: 0 | Image: 15-08-39.jpg
+15-08-41 | Status: Active Working | Window: Employee Tracker Pro | Category: Non-Productive | WorkSecs: 0 | BreakSecs: 0 | Image: 15-08-41.jpg
+15-08-43 | Status: Active Working | Window: Employee Tracker Pro | Category: Non-Productive | WorkSecs: 0 | BreakSecs: 0 | Image: 15-08-43.jpg
+15-08-45 | Status: Active Working | Window: Employee Tracker Pro | Category: Non-Productive | WorkSecs: 0 | BreakSecs: 0 | Image: 15-08-45.jpg
+15-09-01 | Status: Active Working | Window: Admin Dashboard - Monitoring System - Google Chrome | Category: Productive | WorkSecs: 14 | BreakSecs: 0 | Image: 15-09-01.jpg
+15-09-09 | Status: On Break | Window: Status: On Break | Category: Break | WorkSecs: 21 | BreakSecs: 0 | Image: None
+15-11-01 | Status: Active Working | Window: Status: Active Working | Category: Non-Productive | WorkSecs: 21 | BreakSecs: 110 | Image: None
+15-11-31 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 50 | BreakSecs: 110 | Image: 15-11-31.jpg
+15-12-01 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 79 | BreakSecs: 110 | Image: 15-12-01.jpg
+15-12-31 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 108 | BreakSecs: 110 | Image: 15-12-31.jpg
+15-13-01 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 136 | BreakSecs: 110 | Image: 15-13-01.jpg
+15-13-31 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 164 | BreakSecs: 110 | Image: 15-13-31.jpg
+15-14-01 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 193 | BreakSecs: 110 | Image: 15-14-01.jpg
+15-14-31 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 222 | BreakSecs: 110 | Image: 15-14-31.jpg
+15-15-01 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 251 | BreakSecs: 110 | Image: 15-15-01.jpg
+15-15-31 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 280 | BreakSecs: 110 | Image: 15-15-31.jpg
+15-16-01 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 309 | BreakSecs: 110 | Image: 15-16-01.jpg
+15-16-31 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 338 | BreakSecs: 110 | Image: 15-16-31.jpg
+15-17-01 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 366 | BreakSecs: 110 | Image: 15-17-01.jpg
+15-17-31 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 394 | BreakSecs: 110 | Image: 15-17-31.jpg
+15-18-01 | Status: Active Working | Window: Work Records for Maaz - Google Chrome | Category: Productive | WorkSecs: 422 | BreakSecs: 110 | Image: 15-18-01.jpg
+15-18-31 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 451 | BreakSecs: 110 | Image: 15-18-31.jpg
+15-19-01 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 480 | BreakSecs: 110 | Image: 15-19-01.jpg
+15-19-31 | Status: Active Working | Window: Work Records for Maaz - Google Chrome | Category: Productive | WorkSecs: 509 | BreakSecs: 110 | Image: 15-19-31.jpg
+15-20-01 | Status: Active Working | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | WorkSecs: 537 | BreakSecs: 110 | Image: 15-20-01.jpg

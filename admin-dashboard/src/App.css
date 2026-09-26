@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+h1, h2 {
+  color: #1a202c;
+}
+
+img {
+  border: 1px solid #e2e8f0;
+}

@@ -1,0 +1,67 @@
+03-44-11 | Window: Employee Tracker | Category: Non-Productive | Image: 03-44-11.jpg
+03-44-41 | Window: Employee Tracker | Category: Non-Productive | Image: 03-44-41.jpg
+03-53-58 | Window: Employee Tracker | Category: Non-Productive | Image: 03-53-58.jpg
+03-54-28 | Window: Admin Dashboard - Monitoring System - Google Chrome | Category: Productive | Image: 03-54-28.jpg
+03-54-58 | Window: Employee Tracker | Category: Non-Productive | Image: 03-54-58.jpg
+03-55-28 | Window: Employee Tracker | Category: Non-Productive | Image: 03-55-28.jpg
+03-55-58 | Window: CursorGlide | Category: Non-Productive | Image: 03-55-58.jpg
+03-56-28 | Window: Employee Tracker | Category: Non-Productive | Image: 03-56-28.jpg
+03-56-58 | Window: Snipping Tool Overlay | Category: Non-Productive | Image: 03-56-58.jpg
+03-57-28 | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | Image: 03-57-28.jpg
+03-57-58 | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | Image: 03-57-58.jpg
+03-58-28 | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | Image: 03-58-28.jpg
+03-58-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 03-58-58.jpg
+03-59-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 03-59-28.jpg
+03-59-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 03-59-58.jpg
+04-00-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-00-28.jpg
+04-00-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-00-58.jpg
+04-01-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-01-28.jpg
+04-01-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-01-58.jpg
+04-02-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-02-28.jpg
+04-02-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-02-58.jpg
+04-03-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-03-28.jpg
+04-03-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-03-58.jpg
+04-04-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-04-28.jpg
+04-04-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-04-58.jpg
+04-05-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-05-28.jpg
+04-05-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-05-58.jpg
+04-06-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-06-28.jpg
+04-06-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-06-58.jpg
+04-07-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-07-28.jpg
+04-07-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-07-58.jpg
+04-08-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-08-28.jpg
+04-08-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-08-58.jpg
+04-09-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-09-28.jpg
+04-09-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-09-58.jpg
+04-10-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-10-28.jpg
+04-10-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-10-58.jpg
+04-11-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-11-28.jpg
+04-11-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Idle | Image: 04-11-58.jpg
+04-12-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-12-28.jpg
+04-12-58 | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | Image: 04-12-58.jpg
+04-13-28 | Window: Employee Monitoring Software Development Guide - Google Gemini - Google Chrome | Category: Productive | Image: 04-13-28.jpg
+04-13-58 | Window: dist - File Explorer | Category: Non-Productive | Image: 04-13-58.jpg
+04-14-28 | Window: Admin Dashboard - Monitoring System - Google Chrome | Category: Productive | Image: 04-14-28.jpg
+04-14-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-14-58.jpg
+04-15-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-15-28.jpg
+04-15-58 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-15-58.jpg
+04-16-28 | Window: app.py - employee-monitoring-system - Visual Studio Code | Category: Productive | Image: 04-16-28.jpg
+04-16-52 | Window: Employee Tracker | Category: Non-Productive | Image: 04-16-52.jpg
+04-16-58 | Window: Employee Tracker | Category: Non-Productive | Image: 04-16-58.jpg
+04-17-22 | Window: CursorGlide | Category: Non-Productive | Image: 04-17-22.jpg
+04-17-28 | Window: Employee Tracker | Category: Non-Productive | Image: 04-17-28.jpg
+04-17-52 | Window: Employee Tracker | Category: Non-Productive | Image: 04-17-52.jpg
+04-17-58 | Window: CursorGlide | Category: Non-Productive | Image: 04-17-58.jpg
+04-18-22 | Window: Employee Tracker | Category: Non-Productive | Image: 04-18-22.jpg
+04-18-28 | Window: Project build with detection limitations - Claude - Google Chrome | Category: Productive | Image: 04-18-28.jpg
+04-18-58 | Window: Admin Dashboard - Monitoring System - Google Chrome | Category: Productive | Image: 04-18-58.jpg
+13-52-50 | Window: Employee Tracker | Category: Non-Productive | Image: 13-52-50.jpg
+13-53-20 | Window: Search | Category: Non-Productive | Image: 13-53-20.jpg
+13-53-50 | Window: CursorGlide | Category: Non-Productive | Image: 13-53-50.jpg
+13-54-20 | Window: Employee Tracker | Category: Non-Productive | Image: 13-54-20.jpg
+14-20-33 | Window: Employee Tracker | Category: Non-Productive | Image: 14-20-33.jpg
+14-21-03 | Window: Admin Dashboard - Monitoring System - Google Chrome | Category: Productive | Image: 14-21-03.jpg
+14-21-33 | Window: CursorGlide | Category: Non-Productive | Image: 14-21-33.jpg
+14-22-03 | Window: CursorGlide | Category: Non-Productive | Image: 14-22-03.jpg
+14-22-33 | Window: CursorGlide | Category: Non-Productive | Image: 14-22-33.jpg
+14-23-03 | Window: Admin Dashboard - Monitoring System - Google Chrome | Category: Productive | Image: 14-23-03.jpg

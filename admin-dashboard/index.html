@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Monitoring Dashboard</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: #f8fafc; color: #1e293b; margin: 0; padding: 20px; }
+        .container { max-width: 1100px; margin: auto; }
+        .header { background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        select { padding: 8px 12px; border-radius: 6px; border: 1px solid #cbd5e1; font-size: 14px; background: #fff; }
+        .badge { padding: 6px 12px; border-radius: 20px; font-weight: bold; font-size: 13px; }
+        .badge-active { background: #dcfce7; color: #15803d; }
+        .badge-break { background: #fef3c7; color: #b45309; }
+        .badge-inactive { background: #fee2e2; color: #b91c1c; }
+        
+        .pinned-folder { background: #ffffff; border: 2px solid #3b82f6; border-radius: 12px; padding: 20px; margin-top: 20px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .folder-title { display: flex; align-items: center; gap: 8px; color: #1d4ed8; font-size: 18px; font-weight: bold; margin-bottom: 15px; }
+        
+        .progress-bg { background: #e2e8f0; border-radius: 8px; height: 14px; width: 100%; overflow: hidden; margin: 6px 0 12px 0; }
+        .progress-work { background: #2563eb; height: 100%; width: 0%; transition: width 0.4s; }
+        .progress-break { background: #d97706; height: 100%; width: 0%; transition: width 0.4s; }
+
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 15px; }
+        .stat-card { background: #f1f5f9; padding: 12px; border-radius: 8px; text-align: center; }
+
+        .gallery-title { margin-top: 30px; font-size: 18px; color: #0f172a; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-top: 15px; }
+        .img-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        .img-card img { width: 100%; height: 140px; object-fit: cover; }
+        .img-card p { margin: 8px; font-size: 12px; color: #64748b; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Selection Controls -->
+    <div class="header">
+        <div>
+            <h2 style="margin:0 0 5px 0;">Work Records Dashboard</h2>
+            <span style="color:#64748b; font-size:14px;">Select Employee & Date to view folder content</span>
+        </div>
+        <div style="display:flex; gap:10px;">
+            <select id="emp-select" onchange="loadDates()"><option>Select Employee</option></select>
+            <select id="date-select" onchange="loadDetails()"><option>Select Date</option></select>
+        </div>
+    </div>
+
+    <!-- Pinned Break Folder Section -->
+    <div class="pinned-folder" id="pinned-section" style="display:none;">
+        <div class="folder-title">
+            📌 📂 Break & Shift Details (`/breaks`)
+            <span id="status-badge" class="badge badge-inactive" style="margin-left:auto;">Inactive</span>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+            <div>
+                <strong>⏱️ Active Working Hours: <span id="work-hours">0h 0m</span></strong>
+                <div class="progress-bg"><div id="work-bar" class="progress-work"></div></div>
+                <small id="shift-schedule" style="color:#64748b;">Shift Target: 4:00 PM - 1:00 AM</small>
+            </div>
+            <div>
+                <strong>☕ Total Break Duration: <span id="break-hours">0h 0m</span></strong>
+                <div class="progress-bg"><div id="break-bar" class="progress-break"></div></div>
+                <small style="color:#64748b;">Tracked from break folder logs</small>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <small style="color:#64748b;">Idle Instances</small>
+                <h3 id="idle-count" style="margin:4px 0 0 0;">0</h3>
+            </div>
+            <div class="stat-card">
+                <small style="color:#64748b;">Clock Out Count</small>
+                <h3 id="clockout-count" style="margin:4px 0 0 0;">0</h3>
+            </div>
+            <div class="stat-card">
+                <small style="color:#64748b;">Work Progress</small>
+                <h3 id="work-pct" style="margin:4px 0 0 0;">0%</h3>
+            </div>
+            <div class="stat-card">
+                <small style="color:#64748b;">Break Progress</small>
+                <h3 id="break-pct" style="margin:4px 0 0 0;">0%</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screenshots Folder -->
+    <div id="screenshots-section" style="display:none;">
+        <h3 class="gallery-title">📸 Screenshots Folder (`/screenshots`)</h3>
+        <div class="grid" id="shots-grid"></div>
+    </div>
+</div>
+
+<script>
+    const API = "http://localhost:8000";
+
+    async function loadEmployees() {
+        const res = await fetch(`${API}/api/employees`);
+        const data = await res.json();
+        const select = document.getElementById("emp-select");
+        select.innerHTML = '<option value="">Select Employee</option>' + 
+            data.map(e => `<option value="${e}">${e}</option>`).join('');
+    }
+
+    async function loadDates() {
+        const emp = document.getElementById("emp-select").value;
+        if (!emp) return;
+        const res = await fetch(`${API}/api/employees/${emp}/dates`);
+        const dates = await res.json();
+        const select = document.getElementById("date-select");
+        select.innerHTML = '<option value="">Select Date</option>' + 
+            dates.map(d => `<option value="${d}">${d}</option>`).join('');
+    }
+
+    async function loadDetails() {
+        const emp = document.getElementById("emp-select").value;
+        const date = document.getElementById("date-select").value;
+        if (!emp || !date) return;
+
+        const res = await fetch(`${API}/api/data/${emp}/${date}`);
+        const data = await res.json();
+
+        document.getElementById("pinned-section").style.display = "block";
+        document.getElementById("screenshots-section").style.display = "block";
+
+        // Status Badge
+        const badge = document.getElementById("status-badge");
+        badge.innerText = data.live_status;
+        badge.className = "badge " + 
+            (data.live_status === "Active Working" ? "badge-active" : data.live_status === "On Break" ? "badge-break" : "badge-inactive");
+
+        // Metrics & Progress
+        document.getElementById("work-hours").innerText = data.work_hours;
+        document.getElementById("break-hours").innerText = data.break_hours;
+        document.getElementById("shift-schedule").innerText = "Shift: " + data.shift_schedule;
+        
+        document.getElementById("work-bar").style.width = data.work_progress + "%";
+        document.getElementById("break-bar").style.width = data.break_progress + "%";
+        document.getElementById("work-pct").innerText = data.work_progress + "%";
+        document.getElementById("break-pct").innerText = data.break_progress + "%";
+
+        document.getElementById("idle-count").innerText = data.idle_count + " times";
+        document.getElementById("clockout-count").innerText = data.clock_out_count + " times";
+
+        // Screenshots Gallery
+        const grid = document.getElementById("shots-grid");
+        if (data.screenshots.length === 0) {
+            grid.innerHTML = "<p style='color:#64748b;'>No screenshots available for this date.</p>";
+        } else {
+            grid.innerHTML = data.screenshots.map(s => `
+                <div class="img-card">
+                    <img src="${API}${s.url}" alt="Screenshot" />
+                    <p>🕒 ${s.time}</p>
+                </div>
+            `).join('');
+        }
+    }
+
+    loadEmployees();
+</script>
+
+</body>
+</html>
